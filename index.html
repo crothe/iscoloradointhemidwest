@@ -1,1 +1,19 @@
-<h1>No</h1>
+function GenerateAnswer() {
+  responses = [
+    'Definitely not',
+    'Maybe... but no',
+    'Most likely not',
+    'Hell no',
+    'Reply hazy try again',
+    'Ask again later',
+    'My reply is no',
+    'No',
+    'Very doubtful',
+  ];
+  response = responses[Math.floor(Math.random() * responses.length)];
+  document.getElementById('outputDiv').innerHTML = response;
+}
+
+<body onclick="GenerateAnswer()>
+  <div style="text-align:center" id="outputDiv"> </div>
+</body>
