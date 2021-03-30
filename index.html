@@ -1,5 +1,7 @@
 <body>
-  <div style="text-align:center" id="outputDiv"> </div>
+  <div style="text-align:center; font-size: 10em;" id="outputDiv"> </div>
+  <button onclick="GenerateAnswer()">Isn't it though?</button>
+
                                                
   <script>
     function GenerateAnswer() {
@@ -11,7 +13,6 @@
         'Reply hazy try again',
         'Ask again later',
         'My reply is no',
-        'No',
         'Very doubtful',
       ];
       response = responses[Math.floor(Math.random() * responses.length)];
