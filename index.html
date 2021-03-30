@@ -1,21 +1,25 @@
-<script>
-function GenerateAnswer() {
-  responses = [
-    'Definitely not',
-    'Maybe... but no',
-    'Most likely not',
-    'Hell no',
-    'Reply hazy try again',
-    'Ask again later',
-    'My reply is no',
-    'No',
-    'Very doubtful',
-  ];
-  response = responses[Math.floor(Math.random() * responses.length)];
-  document.getElementById('outputDiv').innerHTML = response;
-}
-</script>
-
 <body onload="GenerateAnswer()>
   <div style="text-align:center" id="outputDiv"> </div>
+                                               
+  <script>
+    function {
+      responses = [
+        'Definitely not',
+        'Maybe... but no',
+        'Most likely not',
+        'Hell no',
+        'Reply hazy try again',
+        'Ask again later',
+        'My reply is no',
+        'No',
+        'Very doubtful',
+      ];
+      response = responses[Math.floor(Math.random() * responses.length)];
+      document.getElementById('outputDiv').innerHTML = response;
+    }
+
+    window.onload = function() {
+      GenerateAnswer();
+    };
+  </script>
 </body>
