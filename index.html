@@ -1,3 +1,4 @@
+<script>
 function GenerateAnswer() {
   responses = [
     'Definitely not',
@@ -13,6 +14,7 @@ function GenerateAnswer() {
   response = responses[Math.floor(Math.random() * responses.length)];
   document.getElementById('outputDiv').innerHTML = response;
 }
+</script>
 
 <body onclick="GenerateAnswer()>
   <div style="text-align:center" id="outputDiv"> </div>
